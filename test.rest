@@ -1,0 +1,29 @@
+### get all accounts
+
+GET  http://localhost:3000/api/v1/accounts
+
+
+### insert account
+POST http://localhost:3000/api/v1/accounts
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName" : "Doe",
+    "email" : "doe@email.com",
+    "deposit": 1000,
+    "cCards": ["Visa", "MasterCard"]
+}
+
+### delete acc
+DELETE http://localhost:3000/api/v1/accounts/666f2eca377186a4f72c4558
+
+
+### update acc
+
+PATCH http://localhost:3000/api/v1/accounts/666f308ae104aab93d9265f7
+Content-Type: application/json
+
+{
+    "deposit": 1200
+}
